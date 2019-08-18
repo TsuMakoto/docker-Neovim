@@ -3,7 +3,7 @@ FROM ubuntu
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
-RUN apt-get install -y vim neovim wget git zsh
+RUN apt-get install -y vim neovim git zsh
 
 # install pyenv
 RUN git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
