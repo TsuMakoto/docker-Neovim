@@ -46,3 +46,8 @@ pyenv global 3.7.3 && \
 pip install --upgrade pip && \
 pyenv rehash && \
 pip install neovim pynvim
+
+# vim conf
+RUN mkdir $HOME/.config
+RUN mkdir $HOME/.config/nvim
+COPY ./nvim/ $HOME/.config/nvim/
